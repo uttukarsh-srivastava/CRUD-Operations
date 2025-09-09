@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud Operation in JavaScript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Employee Form</h1>
+  <div class="container">
+    <form autocomplete="off" onsubmit="onFormSubmit(); return false;">
+      <div>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" />
+      </div>
+      <div>
+        <label for="empCode">EMP Code</label>
+        <input type="text" id="empCode" name="empCode" />
+      </div>
+      <div>
+        <label for="email">Email Id</label>
+        <input type="text" id="email" name="email" />
+      </div>
+      <div>
+        <label for="salary">Salary</label>
+        <input type="text" id="salary" name="salary" />
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" />
+      </div>
+      <div class="form_action--button">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+
+    <div class="table-container">
+      <table class="list" id="employeeList">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>EMP Code</th>
+            <th>Email Id</th>
+            <th>Salary</th>
+            <th>City</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
